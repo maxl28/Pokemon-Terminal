@@ -28,6 +28,16 @@ Sample Set #1                    |  Sample Set #2
 
 Type `python3 -V` in your terminal to verify that you have [Python 3.5](https://www.python.org/downloads/) or later installed.
 
+Note: 
+If you're using i3 as your window manager of choice, please make sure to install `feh`:
+	```bash
+	sudo pacman -S feh
+	```
+Also, Manjaro and some other distributions ship URXVT without pixbuf support  so you may need to 
+replace the default package. On Manjaro install `rxvt-unicode-pixbuf` to upgrade your terminal 
+emulator.
+
+
 ## npm
 
 You can install in any (npm-supported) OS using `npm install --global pokemon-terminal`. That's it, you're done!

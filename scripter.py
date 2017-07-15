@@ -26,6 +26,9 @@ def __linux_create_wallpaper_script(image_file_path):
         fmt = 'gsettings set org.gnome.desktop.background picture-uri "file://{}"'
         return fmt.format(image_file_path)
     # elif condition of KDE...
+    elif "i3" in os.environ.get("GDMSESSION"):
+        fmt = 'feh --bg-center "{}"'
+        return fmt.format(image_file_path)
     else:
         print("Window manager not supported ")
         exit(1)
